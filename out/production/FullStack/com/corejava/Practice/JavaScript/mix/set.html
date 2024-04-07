@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        //Set is collection of unique data
+        //array is collection of duplicate data also
+        //lets creat a set-->
+        //this is empty set creation and we add data in to the set
+        /*let s1= new Set();
+        console.log(s1);
+        s1.add(10);
+        s1.add(20);
+        s1.add(30)
+          .add(40)
+          .add(50)
+          .add(60)
+          console.log(s1);*/
+          //array
+          a1=[60,70,80,70,80,90]
+          console.log(a1)
+        //now existing collection data type(array) in to set
+        let b= new Set(a1) 
+        console.log(b);
+        //we can a string in to set because 'string is a collection of charecters' it is also a type of array
+        let c="hyderbad"
+        let d= new Set(c)
+        console.log(d)
+        /*we can delet a element in the set data and the data which we want to delet is
+        exists inthe set data then the status is true or else false this will done by
+        assigning the delet statment to a variable status*/ 
+        let status = d.delete("h")
+        console.log(status)
+        //size of the set
+        console.log(d.size)
+        //'clear' method makes the set empty
+        /*d.clear()
+        console.log(d)*/
+        //we can iterate and call each element in the function using forEach and for of
+        /*for(ele of d)
+        {
+            console.log(ele)
+        }*/
+        //forEach
+        d.forEach(function(ele,index,arr)
+        {
+            console.log(ele)
+            console.log(index)
+            console.log(arr)
+        })
+        //entries method skipped
+
+    </script>
+</html>

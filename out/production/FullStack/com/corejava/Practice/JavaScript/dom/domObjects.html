@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta charset="utf-8">
+        <title>DOM</title>
+     </head>
+     <body>
+        <div id="first">
+            <h1>this is heading tag</h1>
+            <p>this is paragaraph tag</p>
+        </div>
+        <div class="hero">
+            <h1>this is heading1 tag</h1>
+            <p>this is paragaraph1 tag</p>
+            <b>raja</b>
+        </div>
+        <div class="hero">
+            <h2>this is heading2 tag</h2>
+            <p>this is paragaraph2 tag</p>
+            <b>chakri</b>
+        </div>
+        <script>
+            // here getElementById returns all the elements of the specified id 
+            // id value should be unique for every element
+            let x = document.getElementById("first")
+            console.log(x)
+
+
+            //here getting all the elements in div's with className = "hero"-->(collection of html or div)
+            //we can give same class name for other class also as to access all the elements in the other class
+            //returns list of all elements belongs to the specified class
+            let y = document.getElementsByClassName("hero")
+            console.log(y)
+
+            
+            //here we are getting elements by tag name
+            //this is collection of tags if more than one tag
+            let z = document.getElementsByTagName("b")
+            console.log(z)
+        </script>
+     </body>
+</html>

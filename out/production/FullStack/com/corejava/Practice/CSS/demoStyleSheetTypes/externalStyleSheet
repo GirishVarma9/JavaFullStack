@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Demo</title>
+    <!-- we can apply style to multiple web pages
+         styles should be in a seperate file with .css extension
+        apply styles in a css file to any web page using <link> tag -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+     <p>This is paragraph 2</p>
+     <p>This is paragraph 3</p>
+     <p>This is paragraph 4</p>
+     <p>This is paragraph 5</p>
+     <h1>this is h1 tag</h1>
+</body>
+</html>

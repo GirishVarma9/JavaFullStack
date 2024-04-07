@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        //step 1: create constructor function
+        function user(n,a,p)
+        {
+            this.name=n;
+            this.age=a;
+            this.place=p;
+        }
+        //step 2: create object with constructor function call
+        //here user is the constructor function. it matches the key and value that we pass in user arguments
+        let user1 = new user("Chakri",35,"Tenali")
+        console.log(user1)
+        let user2 = new user("Raja",25,"Guntur")
+        console.log(user2)
+        //adding property to user2 object
+        user2.mobile= 9874563210
+        console.log(user2)
+        //acces properties from user1 and user2
+        console.log(user1.name)
+        console.log(user2.place)
+
+
+
+
+    </script>
+</html>

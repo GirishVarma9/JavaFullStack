@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      
+</body>
+</html><html>
+      <script>
+// Function to find the sum of digits of a number
+      function sumOfDigits(number) 
+	  {
+      let sum = 0;
+	  
+// Loop until number becomes 0
+      while (number !== 0) 
+	  {
+// Extract the last digit
+      let digit = number % 10;
+// Add the digit to the sum
+      sum += digit;
+// Remove the last digit from the number
+      number = Math.floor(number / 10);
+      }
+// Return the sum
+      return sum;
+      }
+	  </script>
+</html>	  

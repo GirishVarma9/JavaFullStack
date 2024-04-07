@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        //for every element present inside the array specified function will be executed
+        var salaries =[1000,2000,3000,4000,5000]
+        console.log(salaries);
+        //here salary represents to every element in the array
+        //index represents to index of the every elements in the array
+        //arr represents to length of the array
+        //syntax: arrName.forEach(function funName(currentItem,index,arr){
+        //code });
+        //here currentItem is required but index and arr are optional
+        //currentItem,index,arr--> These are the arguments
+        //we can take anonymous function, arrow function and named function also
+        //here we are writing function directly in forEach method
+        /*salaries.forEach((salary,index)=>
+        {
+            let increment = salary/10;
+            salaries[index] = salary+increment;
+            //console.log(salary);
+            //console.log(index);
+            //console.log(arr);
+
+        })
+        console.log(salaries); */
+        //commenting above code that wrote function directly in to forEach method
+        //Now we are calling a function outside forEach method
+        salaries.forEach(increment1)
+        function increment1(salary,index)
+            {
+            var inc=salary/10;
+            salaries[index]= salary+inc;
+            }
+            console.log(salaries);
+    </script>
+</html>

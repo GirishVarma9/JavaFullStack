@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        class mobiles
+        {
+            constructor(n,r)
+            {
+                this.mobileName= n;
+                this.ram = r;
+            }
+            // getters and setters provides security
+            // if we need to add a property not by initializing directly in the constructor
+            // if we need to do some check-in's or validations and after that checkin's we need to initialize
+            // we initialize using setter function
+            // now checking prize and initializing because price must not be less than zero
+            // so we have to initialize the value on some condition basis
+            // even set is a fnction we have to call them like a normal properties-->
+            // syntax to call set function--> 'ref obj' dot 'set function name'= value
+            // we should pass only one argument in setter function
+            // because every properties should have indipendent setters and getters
+            // for every property we have to create a seperate setter
+            set priceSet(p)
+            {
+                if (p<=0)
+                {
+                    alert("price can't be less than 0")
+                }
+                else
+                {
+                 this.price = p
+                }
+            }
+            // no need of passing arguments in get function
+            // its behaviour is to return some values of that object
+            // we can return any number of values of that objects through getters
+            get getName()
+            {
+                return "company name :"+ this.mobileName
+            }
+        }
+        let m1 = new mobiles("iphone","4gb")
+        console.log(m1)
+    </script>
+</html>

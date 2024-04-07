@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator</title>
+
+    <!-- this is child selector,
+         p tag is direct child to div tag,
+        we use '>' symbol to mention child selector -->
+    <!-- <style>
+        div >p{
+            color: red;
+            background-color: grey;
+        }
+    </style> -->
+
+
+    <!-- this is desendent selector,
+         if p tag is direct child or indirect ,it will apply to all the p tags
+         present in the selected div tag,
+        it is mentioned with space -->
+    <!-- <style>
+        div p{
+            color: skyblue;
+            background-color: black;
+        }
+    </style> -->
+    
+
+    <!-- this is adjacent sibling selector,
+         here we added style to h2 tag that is immidiate next to p tag,
+         here where the p tags are present after p tags where h2 is present it
+         applies to that h2 tag,
+    we use adjacent selector to add stlyle to tag that is after a particular tag,
+     we use '+' between tags in css-->
+         <!-- <style>
+            p+h2{
+                color: skyblue;
+                background-color: black;
+            }
+        </style> -->
+
+
+        <!-- general sibling selector
+      here we added style to h2 tag that were they are present after the p tag,
+      even the other h2 tag is not direct sibling to the p tag it applies the-
+      style to it, p tag and its siblings (h2 tags) must be direct child to-
+      paricular tag -->
+      <style>
+        p~h2{
+                color: skyblue;
+                background-color: black;
+            }
+      </style>
+</head>
+<body>
+    <p class="raja">This is paragraph 2</p>
+     <p id="third">This is paragraph 3</p>
+     <p>This is paragraph 4</p>
+     <p>This is paragraph 5</p>
+     <h1 class="raja">this is h1 tag</h1>
+     <h2 class="raja">this is h2 tag</h2>
+     <h3>this is h3 tag</h3>
+     <div>
+        <p>this is p tag in div</p>
+        <h2>
+            <p>this is p tag in h2 tag</p>
+        </h2>
+     </div>
+     <div>
+        <p>this is another direct p tag in another div</p>
+     </div>
+     <div>
+        <h2>this is h2 before p tag</h2>
+        <p>this is p tag right before the h2 tag 1</p>
+        <h2>this is h2 immidiate after the p tag 1</h2>
+        <h2>this is h2 tag after the h2 tag 1</h2>
+     </div>
+     <div>
+        <p>this is p tag right before the h2 tag 2</p>
+        <h2>this is h2 immidiate after the p tag  2</h2>
+        <h2>this is h2 after h2 tag 2</h2>
+     </div>
+</body>
+</html>

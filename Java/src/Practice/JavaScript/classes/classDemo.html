@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html>
+    <script>
+        class Person {
+    constructor(fn,sn) {
+        this.firstName = fn;  // Properties initialized in the constructor
+        this.secondName = sn;
+    }
+
+    // we can add additional properties to object in two ways.
+    // one is syntax--> obj reference.the property key which we want to add = its value (if string use "")
+    //another is creating a function and calling that function with the object (which we want to additional--
+    //  properties) and pass value  
+    // we dont need function keyword to create a function in a class. just use the function name
+    // Function to set age
+    setAge(a) {
+        this.age = a; // Property set within a function
+    }
+
+    // Function to set place
+    /*setPlace(p) {
+        this.place = p; // Property set within a function
+    }*/
+}
+
+// Create a new instance of the Person class
+let p1 = new Person("John","Victor");
+let p2 = new Person("Ruther","Ford")
+
+// Call setAge function to pass argument and set additional properties
+p1.setAge(25)
+//with out any function we just added with ref obj dot key = value
+p2.age= 25
+//p.setPlace("New York")
+
+
+console.log(p1);   // Output: Person { name: 'John Victor', age: 30, place: 'New York' }
+console.log(p2);
+
+    </script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        //arrow function has no function name and function keyword also and it will asigned to a variable
+     var product=(num1,num2)=>
+        {
+          var result=num1*num2;
+          return result
+        }
+        document.write(product(5,3));
+        document.write("<br>");
+
+
+       //without return statment
+       /*if there is no return statment we can call the function from any where any time
+       and many times and pass arguments this is function re-usability */
+        var box=(n1,n2)=>
+        {
+            var x=n1+n2;
+           document.write(x);
+        }
+        box(2,3)
+        document.write("<br>");
+
+
+        //if we only one statment in the function body
+        var pen=(p1,p2)=>(p1*p2);
+        document.write(pen(3,6));
+        document.write("<br>");
+
+
+        //if we only one statment in the function body and one parameter
+        var cube=(num)=>(num*num*num)
+        document.write(cube(5));
+        document.write("<br>");
+
+         //if we only one statment in the function body and no parameter
+         //empty parameters are declared with '() or _'
+         //no need of curly brase for single statment
+         var greet=()=>{
+                        document.write("Good Morning"); 
+                        document.write("<br>Welcome");
+        //if we want to return anything assign it to variable and print variable
+                    return 6
+                }
+         var res = greet();
+         document.write("<br>"+res);
+         document.write("<br>")
+         
+         //Default parameters
+         //when we did not pass value to a parameter then it will take default value
+         //we will set the default for that perticular parameter
+         //if we pass value to that parameter then the default value will be ignored and it takes the value which we pass
+         //if we pass more values than the parameter required then they will be ignored
+         function multi(num1,num2=4){
+         document.write((num1*num2));
+         }
+         multi(5)
+         document.write("<br>")
+
+         //Rest parameters
+         //we can make function to accept many number of parameters usig rest parameters
+         //use ... before rest parameters
+         function chocolate(no1=5,no2=1,...rest)
+         {
+            console.log(rest);
+            console.log(arguments);
+            console.log(arguments[1]);
+            console.log(arguments.length);
+
+         var result=no1*no2;
+         for(nos of rest)
+         {
+            result=result*nos;
+         }
+         document.write(result);
+         }
+         chocolate(2,3,4,5)
+    </script>
+</html>

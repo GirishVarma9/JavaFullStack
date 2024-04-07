@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function user(n,a,p)
+        {
+            this.name=n;
+            this.age=a;
+            this.place=p;
+            this.login = function(){
+                console.log("Hello"+" "+this.name+" "+"You have Logged in sucessfully")
+            }
+        }
+        let user1 = new user("Chakri",35,"Tenali")
+        //console.log(user1)
+        //for in loop is used to iterate every key and value in te object
+        //for (key in user1)
+         {
+            console.log(Object.entries(user1))
+         }
+        
+    </script>
+</html>

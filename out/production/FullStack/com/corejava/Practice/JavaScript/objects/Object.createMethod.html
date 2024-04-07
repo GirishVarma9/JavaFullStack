@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function user(n,a,p)
+        {
+            this.name=n;
+            this.age=a;
+            this.place=p;
+            //we can creat a method in the function
+            //creating a method in this function
+            //syntax: this.methodName = anonymous function
+            this.login = function(){
+                console.log("Hello"+" "+this.name+" "+"You have Logged in sucessfully")
+            }
+        }
+        // here we are having the user1 object
+        let user1 = new user("Chakri",35,"Tenali")
+        console.log(user1)
+        //here we are creating user3 object and it should be in the form of user1
+        //by using the existing user1 object 
+        let user3=Object.create(user1)
+        console.log(user3)
+        //we created an empty object user3
+        //now we have to add values matching the keys to the user3 object 
+        user3.name = "Xyz"
+        user3.age = 26
+        user3.place="vizag"
+        console.log(user3)
+        //lets call login method using objects
+        user1.login()
+        user3.login()
+        console.log(user1.place)
+    </script>
+</html>
